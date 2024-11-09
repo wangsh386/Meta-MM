@@ -10,23 +10,24 @@ In the model architecture, multimodal information is utilized for prediction, an
 
 ## 2. Acknowledgments
 
-We achieved significant state-of-the-art (SOTA) results on the SIDER dataset. However, on two other major task sets, although our model outperformed the baseline methods, the improvement was marginal. This is primarily due to the complexity and large size of our model, resulting in longer training times and accuracy that did not meet our expectations, thus limiting its practical significance in real-world drug discovery.
+We achieved significant state-of-the-art (SOTA) results on the SIDER dataset. However, on two other major task sets, although our model outperformed the baseline methods, the improvement was marginal. The large size of our model resulted in generally longer training times, and the accuracy did not meet our expected outcomes. Consequently, we believe its practical significance in real-world drug discovery is limited.
 
 We would like to extend special thanks to Jia Jie for his contributions to this project! Throughout this lengthy process, we supported each other and maintained unconditional trust. Although we did not achieve the desired outcomes, we both learned a great deal and remained true to our initial motivations despite numerous challenges and temptations.
 
 ## 3. Requirements
 
-paddle-bfloat==0.1.7
-paddlepaddle==2.5.1
-torch==1.13.0
-torch-cluster==1.6.0+pt113cu117
-torch-geometric==2.2.0
-torch-scatter==2.1.0+pt113cu117
-torch-sparse==0.6.15+pt113cu117
-torch-spline-conv==1.2.1+pt113cu117
-rdkit==2023.3.1
+- paddle-bfloat==0.1.7
+- paddlepaddle==2.5.1
+- torch==1.13.0
+- torch-cluster==1.6.0+pt113cu117
+- torch-geometric==2.2.0
+- torch-scatter==2.1.0+pt113cu117
+- torch-sparse==0.6.15+pt113cu117
+- torch-spline-conv==1.2.1+pt113cu117
+- rdkit==2023.3.1
 
 See environment.yml for details.
+
 
 ## 4. Usage
 
