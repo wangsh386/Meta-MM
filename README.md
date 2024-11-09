@@ -41,6 +41,7 @@ Run the following command:
 
 ```bash
 python Meta-MM.py
+```
 
 ### 2. Processing Your Own Dataset
 If you need to process your own dataset, perform the following preprocessing steps:
@@ -49,3 +50,4 @@ If you need to process your own dataset, perform the following preprocessing ste
 python build_corpus.py --in_path {data_path} --out_path {save_path}
 python build_vocab.py --corpus_path {corpus_path} --out_path {save_path}
 python data_3d.py --dataset {dataset_name}
+```
