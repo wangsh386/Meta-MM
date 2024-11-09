@@ -5,7 +5,7 @@
 ## 1. Framework
 
 Despite the emergence of numerous methods based on sequences, graph structures, and geometric features for molecular property prediction, most existing studies focus solely on a single modality, failing to comprehensively capture the multidimensional characteristics and complex information of molecules. To address this limitation, we propose an innovative multimodal representation learning model that integrates sequence, graph, and geometric features, combined with a meta-learning strategy to enhance prediction accuracy and generalization capabilities. 
-![]
+![](https://github.com/wangsh386/Meta-MM/blob/main/images/muti.png)
 In the model architecture, multimodal information is utilized for prediction, and a double-layer optimization-based meta-learning strategy is employed to transfer meta-knowledge acquired from multiple property prediction tasks to low-data target tasks. This enables the model to quickly adapt and accurately predict molecular properties with only a few samples.
 
 ## 2. Acknowledgments
@@ -30,20 +30,22 @@ See environment.yml for details.
 
 ## 4. Usage
 
-# 1. Direct Execution
-Download the data folder containing the datasets from: [Baidu Netdisk Link](https://pan.baidu.com/s/1JOIHfUeaxG-HyIaGS3I7AQ?pwd=jq46 )
-Extraction Code: jq46
+### 1. Direct Execution
 
-Place the data folder in the same directory as Meta-MM.py.
+Download the data folder containing the datasets from: [Baidu Netdisk Link](https://pan.baidu.com/s/1JOIHfUeaxG-HyIaGS3I7AQ?pwd=jq46)  
+**Extraction Code:** `jq46`
+
+Place the `data` folder in the same directory as `Meta-MM.py`.
 
 Run the following command:
 
+```bash
 python Meta-MM.py
 
-
-# 2. Processing Your Own Dataset
+### 2. Processing Your Own Dataset
 If you need to process your own dataset, perform the following preprocessing steps:
 
+```bash
 python build_corpus.py --in_path {data_path} --out_path {save_path}
 python build_vocab.py --corpus_path {corpus_path} --out_path {save_path}
 python data_3d.py --dataset {dataset_name}
